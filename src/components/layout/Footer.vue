@@ -44,21 +44,6 @@ export default {
 </script>
 
 <style>
-/*! CSS Used from: https://www.1kmb.com/static/css/css.css?20210767 */
-a {
-  text-decoration: none;
-}
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
-}
-a {
-  text-decoration: none;
-}
 footer {
   position: relative;
   font-size: 0.85em;
@@ -88,22 +73,6 @@ footer a {
     background-color: #c0c4cc;
   }
 }
-/*! CSS Used from: https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-users:before {
-  content: "\f0c0";
-}
-.fa-qq:before {
-  content: "\f1d6";
-}
-/*! CSS Used from: Embedded */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -111,22 +80,5 @@ p {
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
-/*! CSS Used fontfaces */
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 </style>

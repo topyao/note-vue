@@ -41,15 +41,6 @@ export default {
 </script>
 
 <style>
-/*! CSS Used from: https://www.1kmb.com/static/css/css.css?20210767 */
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
-}
 #headline {
   font-weight: bolder;
   font-size: 2.5em;
@@ -68,56 +59,6 @@ export default {
     background-color: #c0c4cc;
   }
 }
-/*! CSS Used from: https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-user:before {
-  content: "\f007";
-}
-.fa-eye:before {
-  content: "\f06e";
-}
-.fa-calendar:before {
-  content: "\f073";
-}
-.fa-comment:before {
-  content: "\f075";
-}
-.fa-folder:before {
-  content: "\f07b";
-}
-/*! CSS Used from: https://www.1kmb.com/static/editor/css/editormd.preview.css */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-}
-.fa-user:before {
-  content: "\f007";
-}
-.fa-eye:before {
-  content: "\f06e";
-}
-.fa-calendar:before {
-  content: "\f073";
-}
-.fa-comment:before {
-  content: "\f075";
-}
-.fa-folder:before {
-  content: "\f07b";
-}
-/*! CSS Used from: Embedded */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -125,38 +66,5 @@ p {
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
-/*! CSS Used fontfaces */
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.eot#iefix&v=4.3.0")
-      format("embedded-opentype"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.woff2?v=4.3.0")
-      format("woff2"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.woff?v=4.3.0")
-      format("woff"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.ttf?v=4.3.0")
-      format("truetype"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 </style>

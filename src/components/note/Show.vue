@@ -3,7 +3,7 @@
     <Header />
     <Top />
     <main style="margin-top: 0.5em">
-      <div class="container">
+      <div>
         <div class="left" style="width: 80%">
           <div class="card" style="position: relative">
             <div class="tips" style="margin-bottom: 0.5em">
@@ -1265,26 +1265,10 @@ a {
     border-left: 0.125rem solid #f5f5f5;
   }
 }
-/*! CSS Used from: https://www.1kmb.com/static/css/css.css?20210767 */
-input {
-  font-family: ceym, PingFang\SC, Hiragino\Sans\GB, Microsoft\YaHei, STHeiti,
-    WenQuanYi\Micro\Hei, Helvetica, Arial, sans-serif !important;
-}
-a {
-  text-decoration: none;
-}
 .meme {
   width: 2em;
   height: 2em;
   cursor: pointer;
-}
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
 }
 .card-content {
   padding: 0.2em 0.7em;
@@ -1299,11 +1283,6 @@ span#end::after {
   height: 1px;
   display: inline-block;
   margin: 0 16px;
-}
-.container {
-  min-height: 80vh;
-  display: flex;
-  box-sizing: border-box;
 }
 #test-editormd-view2 {
   box-sizing: border-box;
@@ -1325,14 +1304,6 @@ span#end::after {
   box-shadow: rgb(236 236 236) 0 0 6px 0;
   overflow-y: auto;
 }
-.card {
-  box-shadow: rgb(240 240 240) 0 0 4px 0;
-  background-color: white;
-  border-radius: 5px;
-  word-break: break-all;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-}
 aside {
   width: 25%;
   margin-left: 0.5em;
@@ -1351,9 +1322,6 @@ aside {
 }
 .card-content > li > a:hover {
   color: #000000;
-}
-a {
-  text-decoration: none;
 }
 #comment-field {
   box-sizing: border-box;
@@ -1386,25 +1354,6 @@ input[name="name"]:focus {
   border: 1px solid #4f70f6;
   box-shadow: #6c8aff 0 0 4px 0;
 }
-.tips {
-  min-height: 1.8em;
-  line-height: 1.8em;
-  font-weight: bold;
-  font-size: 0.95em;
-  background-color: white;
-  color: grey;
-  padding-left: 0.5em;
-}
-.tips > a {
-  color: black;
-}
-.tips > a:hover {
-  color: grey;
-}
-main {
-  margin: 0 auto;
-  width: 78%;
-}
 .editormd-html-preview {
   font-size: 15px;
 }
@@ -1429,9 +1378,6 @@ main {
   .left {
     margin: 0 auto !important;
     width: 97% !important;
-  }
-  main {
-    width: 100% !important;
   }
   .d-bg {
     display: none !important;
@@ -1754,21 +1700,13 @@ main {
   width: 100%;
   background-color: #fff;
 }
-/*! CSS Used from: Embedded */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
-a {
-  text-decoration: none;
 }
 .comment-list .comment-item {
   padding: 0.5rem;
@@ -1840,47 +1778,5 @@ a {
     font-size: 0.65rem;
     font-weight: 400;
   }
-}
-/*! CSS Used fontfaces */
-@font-face {
-  font-family: ceym;
-  src: url("https://www.1kmb.com/static/fonts/ceym.woff2");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.eot#iefix&v=4.3.0")
-      format("embedded-opentype"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.woff2?v=4.3.0")
-      format("woff2"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.woff?v=4.3.0")
-      format("woff"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.ttf?v=4.3.0")
-      format("truetype"),
-    url("https://www.1kmb.com/static/editor/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: octicons-anchor;
-  src: url(data:font/woff;charset=utf-8;base64,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)
-    format("woff");
 }
 </style>

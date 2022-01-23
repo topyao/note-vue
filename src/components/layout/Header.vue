@@ -5,11 +5,9 @@
         <li class="left-items"><a href="/">主页</a></li>
         <li class="left-items d-bg">
           <a href="javascript: void(0)"
-            >数据库&nbsp;&nbsp;<i
-              class="fa fa-angle-down"
-              aria-hidden="true"
-            ></i
-          ></a>
+            >数据库&nbsp;&nbsp;
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
           <ul class="dropdown-menu-box" style="display: none">
             <div class="cat-box">
               <a class="item" href="/search?kw=MySQL">
@@ -222,7 +220,7 @@
           ></a>
         </li>
         <li class="d-bg" style="min-width: 2.5em">
-          <a href="/logout?from=https://www.1kmb.com/" title="退出"
+          <a @click.prevent="mask = 'Login'" title="登录"
             ><i class="fa fa-sign-out"></i
           ></a>
         </li>
@@ -253,14 +251,19 @@
         </li>
       </ul>
     </form>
+    <component :is="mask"></component>
   </header>
 </template>
 
 <script>
+import Login from "./Login.vue";
 export default {
   name: "Header",
+  components: { Login },
   data() {
-    return {};
+    return {
+      mask: "None",
+    };
   },
 };
 </script>
@@ -269,17 +272,6 @@ export default {
 input {
   font-family: ceym, PingFang\SC, Hiragino\Sans\GB, Microsoft\YaHei, STHeiti,
     WenQuanYi\Micro\Hei, Helvetica, Arial, sans-serif !important;
-}
-a {
-  text-decoration: none;
-}
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
 }
 .dropdown-menu-box {
   padding: 0;
@@ -454,58 +446,5 @@ nav a {
 .dropdown-menu-box > .cat-box > .item > .content > div {
   font-weight: normal;
   overflow: hidden;
-}
-/*! CSS Used from: https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-book:before {
-  content: "\f02d";
-}
-.fa-pencil:before {
-  content: "\f040";
-}
-.fa-sign-out:before {
-  content: "\f08b";
-}
-.fa-bars:before {
-  content: "\f0c9";
-}
-.fa-angle-down:before {
-  content: "\f107";
-}
-/*! CSS Used from: Embedded */
-img {
-  vertical-align: middle;
-}
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-/*! CSS Used fontfaces */
-@font-face {
-  font-family: ceym;
-  src: url("https://www.1kmb.com/static/fonts/ceym.woff2");
-}
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 </style>

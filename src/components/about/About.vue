@@ -2,7 +2,7 @@
   <div>
     <Header />
     <TopBar />
-    <main id="app" style="margin-top: 0.8em">
+    <main style="margin-top: 0.8em">
       <div style="display: flex; justify-content: space-around">
         <p
           style="
@@ -160,45 +160,6 @@ export default {
 </script>
 
 <style>
-/*! CSS Used from: https://www.1kmb.com/static/css/css.css?20210767 */
-a {
-  text-decoration: none;
-}
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
-}
-.card {
-  box-shadow: rgb(240 240 240) 0 0 4px 0;
-  background-color: white;
-  border-radius: 5px;
-  word-break: break-all;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-}
-a {
-  text-decoration: none;
-}
-.tips {
-  min-height: 1.8em;
-  line-height: 1.8em;
-  font-weight: bold;
-  font-size: 0.95em;
-  background-color: white;
-  color: grey;
-  padding-left: 0.5em;
-}
-main {
-  margin: 0 auto;
-  width: 78%;
-}
-#app {
-  margin-top: 3.8em;
-}
 .team {
   width: 80%;
   margin: 0 auto 2em;
@@ -237,9 +198,6 @@ main {
   border-radius: 7.5em;
 }
 @media screen and (max-width: 880px) {
-  main {
-    width: 100% !important;
-  }
   .team {
     width: 95%;
     margin: 1em auto;

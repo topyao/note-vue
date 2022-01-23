@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main class="container" style="margin-top: 3.8em">
+    <main style="margin-top: 3.8em">
       <div class="left">
         <Welcome />
         <Card />
@@ -35,28 +35,10 @@ export default {
 </script>
 
 <style>
-/*! CSS Used from: https://www.1kmb.com/static/css/css.css?20210767 */
-a {
-  text-decoration: none;
-}
-*::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 5px;
-}
-.card-content {
-  padding: 0.2em 0.7em;
-  margin: 0;
-}
-
 .left {
   width: 75%;
   margin-right: 1%;
 }
-
 .list-item {
   padding: 0.5em;
   margin: 0.5em 0;
@@ -88,19 +70,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.container {
-  min-height: 80vh;
-  display: flex;
-  box-sizing: border-box;
-}
-.card {
-  box-shadow: rgb(240 240 240) 0 0 4px 0;
-  background-color: white;
-  border-radius: 5px;
-  word-break: break-all;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-}
 .paginate {
   padding: 0;
   margin: 0.8em 0;
@@ -114,50 +83,20 @@ a {
 .article-title:hover {
   color: #616060;
 }
-.card-content > li {
-  margin: 0.2em 0;
-  list-style-type: none;
-  min-height: 1.5em;
-}
-.card-content > li > a {
-  font-size: 0.85em;
-  font-weight: bold;
-  color: #656565;
-  transition: all 0.3s;
-}
-.card-content > li > a:hover {
-  color: #000000;
-}
-a {
-  text-decoration: none;
-}
-#thumb {
+.thumb {
   height: 190px;
   border-radius: 10px;
   width: 20em;
   margin-right: 1.2em;
   transition: all 0.3s;
 }
-#thumb:hover {
+.thumb:hover {
   transform: scale(0.98);
 }
 .description {
   padding: 0.5em;
   color: grey;
   font-size: 0.9em;
-}
-.tips {
-  min-height: 1.8em;
-  line-height: 1.8em;
-  font-weight: bold;
-  font-size: 0.95em;
-  background-color: white;
-  color: grey;
-  padding-left: 0.5em;
-}
-main {
-  margin: 0 auto;
-  width: 78%;
 }
 .sm-back {
   height: 7.5em;
@@ -249,7 +188,7 @@ p.links a:hover {
   .links {
     width: 100%;
   }
-  #thumb {
+  .thumb {
     width: 100%;
     height: 200px;
     margin-right: 0;
@@ -261,7 +200,6 @@ p.links a:hover {
   .big-font {
     font-size: 4em;
   }
-  main,
   #banner-content {
     width: 100% !important;
   }
@@ -324,66 +262,11 @@ a.tags:hover {
 .card-sm:last-child {
   margin-right: 0;
 }
-@media all {
-  ::-webkit-scrollbar-thumb {
-    border-radius: var(--border-hd);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #c0c4cc;
-  }
-}
-/*! CSS Used from: https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.css */
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-lock:before {
-  content: "\f023";
-}
-.fa-book:before {
-  content: "\f02d";
-}
-.fa-eye:before {
-  content: "\f06e";
-}
-.fa-calendar:before {
-  content: "\f073";
-}
-.fa-folder:before {
-  content: "\f07b";
-}
-.fa-thumbs-o-up:before {
-  content: "\f087";
-}
-.fa-link:before {
-  content: "\f0c1";
-}
-.fa-circle:before {
-  content: "\f111";
-}
-/*! CSS Used from: Embedded */
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-img {
-  vertical-align: middle;
-}
-::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
 .d-flex {
   display: flex !important;
 }
 .w-100 {
   width: 100% !important;
-}
-.justify-content-between {
-  justify-content: space-between !important;
 }
 .widget-box {
   box-shadow: rgb(240 240 240) 0 0 4px 0;
@@ -478,22 +361,5 @@ img {
   100% {
     margin: 0 0.4em;
   }
-}
-/*! CSS Used fontfaces */
-@font-face {
-  font-family: "FontAwesome";
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
-      format("woff2"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
-      format("woff"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
-      format("truetype"),
-    url("https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 </style>
